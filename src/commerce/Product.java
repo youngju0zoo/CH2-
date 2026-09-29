@@ -31,7 +31,7 @@ public class Product {
     @Override
     public String toString() {
         return productName
-                + "   |   " + price + "원"
+                + "   |   " + String.format("%,d원", price)
                 + "   |   " + explanation
                 + "   |   " + stock;
     }

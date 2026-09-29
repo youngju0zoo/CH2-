@@ -28,7 +28,7 @@ public class Main {
             product.getStock();
             System.out.println( (i + 1) + ". "
                     + product.getProductName()
-                    + "   |   " + product.getPrice() + "원"
+                    + "   |   " + String.format("%,d원", product.getPrice())
                     + "   |   " + product.getExplanation()
                     + "   |   " + product.getStock());
         }
