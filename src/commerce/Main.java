@@ -17,32 +17,7 @@ public class Main {
         productList.add(productC);
         productList.add(productD);
 
-        System.out.println(" [ 실시간 커머스 플랫폼 - 전자제품 ] ");
-        // 각 리스트마다 순번 나오게 만들기, 1부터 시작
-        // 0 입력받고 "커머스 플랫폼을 종료합니다."출력
-        for(int i=0; i< productList.size(); i++){
-            Product product = productList.get(i);
-            product.getProductName();
-            product.getPrice();
-            product.getExplanation();
-            product.getStock();
-            System.out.println( (i + 1) + ". "
-                    + product.getProductName()
-                    + "   |   " + String.format("%,d원", product.getPrice())
-                    + "   |   " + product.getExplanation()
-                    + "   |   " + product.getStock());
-        }
-        System.out.println("0. 종료    |  프로그램 종료");
-        Scanner scanner = new Scanner(System.in);
-        while (true) {
-            int num = scanner.nextInt();
-            if (num==0) {
-                System.out.println(" 커머스 플랫폼을 종료합니다. ");
-                break;
-            } else if ( num >= 1 && num < 5) {
-                Product product = productList.get(num - 1);
-                System.out.println(product);
-            }
-        }
+        CommerceSystem commerceSystem = new CommerceSystem(productList);
+        commerceSystem.start();
     }
 }
