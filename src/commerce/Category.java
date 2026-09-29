@@ -18,4 +18,12 @@ public class Category {
     public void addProduct (Product product) {
         productList.add(product);
     }
+    // 카테고리 이름 반환
+    public String getCategoryName() {
+        return this.categoryName;
+    }
+    // 제품목록
+    public List<Product> getProductList() {
+        return this.productList;
+    }
 }

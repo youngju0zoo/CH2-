@@ -30,7 +30,7 @@ public class Product {
     }
     @Override
     public String toString() {
-        return productName
+        return "선택한 상품: " + productName
                 + "   |   " + String.format("%,d원", price)
                 + "   |   " + explanation
                 + "   |   " + stock;
