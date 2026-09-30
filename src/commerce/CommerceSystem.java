@@ -36,10 +36,6 @@ public class CommerceSystem {
                 // 0 입력받고 "커머스 플랫폼을 종료합니다."출력
                 for(int i=0; i< products.size(); i++){
                     Product product = products.get(i);
-                    product.getProductName();
-                    product.getPrice();
-                    product.getExplanation();
-                    product.getStock();
                     System.out.println( (i + 1) + ". "
                             + product.getProductName()
                             + "   |   " + String.format("%,d원", product.getPrice())
