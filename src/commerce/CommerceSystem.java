@@ -64,4 +64,10 @@ public class CommerceSystem {
         }
 
     }
+    public List<Category> getCategories() {
+        return this.categories;
+    }
+    public void setCategories(List<Category> categories) {
+        this.categories=categories;
+    }
 }

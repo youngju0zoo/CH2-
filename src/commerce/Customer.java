@@ -12,4 +12,23 @@ public class Customer {
         this.customerGrade = customerGrade;
     }
     // 기
+    public String getCustomerName() {
+        return this.customerName;
+    }
+    public String getCustomerEmail() {
+        return this.customerEmail;
+    }
+    public String getCustomerGrade() {
+        return this.customerGrade;
+    }
+
+    public void setCustomerName(String customerName) {
+        this.customerName = customerName;
+    }
+    public void setCustomerEmail(String customerEmail) {
+        this.customerEmail = customerEmail;
+    }
+    public void setCustomerGrade(String customerGrade) {
+        this.customerGrade = customerGrade;
+    }
 }

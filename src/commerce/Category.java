@@ -26,4 +26,11 @@ public class Category {
     public List<Product> getProductList() {
         return this.productList;
     }
+
+    public void setCategoryName(String categoryName) {
+        this.categoryName = categoryName;
+    }
+    public void setProductList(List<Product> productList) {
+        this.productList = productList;
+    }
 }
