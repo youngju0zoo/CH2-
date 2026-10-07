@@ -46,7 +46,8 @@ public class Main {
         categoryC.addProduct(productL);
         categoryList.add(categoryC);
 
-        CommerceSystem commerceSystem = new CommerceSystem(categoryList);
+        Cart cart = new Cart();
+        CommerceSystem commerceSystem = new CommerceSystem(categoryList, cart);
         commerceSystem.start();
     }
 }

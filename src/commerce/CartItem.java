@@ -11,4 +11,16 @@ public class CartItem {
         this.quantity = 1;
     }
     //기
+    public Product getProduct() {
+        return this.product;
+    }
+    public int getQuantity() {
+        return this.quantity;
+    }
+
+    // 같은 상품을 추가하는 기능
+    public void increaseQuantity() {
+        quantity++;
+    }
+    // 키벨류맵구조 생각해보기
 }

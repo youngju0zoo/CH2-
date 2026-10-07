@@ -48,4 +48,8 @@ public class Product {
     public void setStock(int stock) {
         this.stock = stock;
     }
+    // 주문한 수량만큼 재고 차감하기
+    public void decreaseStock(int quantity) {
+        stock -= quantity;
+    }
 }
